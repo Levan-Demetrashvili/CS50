@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: because it is faster than sort3 on sorted list but slower than sort2 on random list.
+
+sort2 uses: Merge sort
+
+How do you know?: because merge sort is faster than other two algorithms and this file runs noticeably fast 
+
+sort3 uses: Selection sort
+
+How do you know?: because it needs same amount of time on both sorted and unsorted lists and is slower.
