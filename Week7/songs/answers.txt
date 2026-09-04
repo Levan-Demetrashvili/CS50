@@ -1,0 +1,2 @@
+This will not be sufficient because we need to have data on other things like: duration, rythm and etc.
+The more data we have, the more precisely we can guess what the user likes.
