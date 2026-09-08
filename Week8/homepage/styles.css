@@ -1,0 +1,425 @@
+html {
+    height: 100%;
+}
+/* This styles applies for all pages */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: radial-gradient(115% 100% at 51.1% 0%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+nav li a.nav-link {
+    color: #fff;
+
+}
+
+
+nav .menu svg {
+    display: none;
+    cursor: pointer;
+    fill: #fff;
+    transition: fill 0.5s;
+
+
+}
+
+nav .menu svg.fixed {
+    position: fixed;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+
+nav ul.nav.dropdown {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 40px;
+    background-color: black;
+}
+
+
+nav li a.nav-link:hover, nav li a.nav-link:focus {
+    color: #a1a110;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.active a {
+    color: #a1a110 !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+svg.rockstar-icon {
+    cursor: pointer;
+}
+
+svg.rockstar-icon:hover path {
+    fill: #a1a110;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: radial-gradient(115% 100% at 51.1% 0%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+footer p {
+    font-size: 18px;
+    color: #fff;
+    white-space: pre-line;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Only index.html */
+.home {
+    position: relative;
+    width:100%;
+    aspect-ratio: 16 / 9;
+}
+
+.home .overlay {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #333;
+
+
+}
+.home img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+
+}
+
+.countdown {
+    position: relative;
+    padding: 40px 20px;
+    gap: 50px;
+    text-align: center;
+
+}
+
+.countdown .game-title {
+    font-family: 'Oswald';
+    color: #fff;
+
+}
+.game-title h1 {
+    font: bold 60px sans-serif;
+
+}
+
+.text-orange {
+    color: #f5a623;
+}
+
+.game-title p {
+    font: 20px Arial;
+    color: oklch(70.7% .022 261.325);
+    word-spacing: 0.1em;
+}
+
+
+.timer-container {
+    gap: 15px;
+}
+
+.timer-container b {
+    word-spacing: 0.2em;
+}
+
+.timer-container p {
+    color: #ffb2c6;
+    font: bold 48px sans-serif;
+}
+
+/* Featured.html */
+
+main.background {
+    background-color: #121323;
+    width: 100%;
+    padding: 7.5vw;
+}
+
+main.featured {
+
+    justify-content: space-between;
+}
+
+.featured h1 {
+    color: #ffb2c6;
+    font: bold 32px sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.featured .news-container {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.box {
+    background: linear-gradient(180deg, #38365d 0%, #1f1f38 30%, #252644 65%, #1f1f38 100%);
+    background-color: #38365d;
+    height: 100%;
+    border-radius: 5%;
+
+}
+
+.news-container .box img {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.text {
+    height: stretch;
+    justify-content: space-between;
+    gap: min(calc(4.5vw / 3), calc(2560px * .045 / 3));
+    padding: min(calc(8vw / 3), calc(2560px * .08 / 3));
+
+}
+
+
+.box h2 {
+    color: #e5ddff;
+    font: bold min(calc(4.5vw / 3), calc(2560px * .045 / 3)) Arial;
+    margin: 0;
+}
+
+.box p {
+    color: #ccc2f5;
+    font: min(calc(4vw / 3), calc(2560px * .04 / 3)) Arial;
+    margin: 0;
+}
+
+.featured > img {
+    margin-top: 50px;
+    width: 20vw;
+    align-self: center;
+}
+
+.featured a {
+    text-decoration: none;
+}
+
+.box:hover {
+    opacity: 0.8;
+}
+
+/* Trailers.html */
+
+main.trailers {
+    align-items: center;
+    gap: 50px;
+}
+
+.trailers h1 {
+    color: #ffb2c6;
+    font: bold 32px sans-serif;
+    align-self: flex-start;
+
+
+}
+
+.trailer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 15vw;
+}
+
+.trailer h2 {
+    color: #e5ddff;
+    font: bold min(calc(9vw / 3), calc(2560px * .09 / 3)) Arial
+}
+
+.trailer iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* pricing.html */
+main.pricing {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.pricing .card.standard {
+    background-color: #342442;
+}
+
+
+.pricing .card.ultimate {
+    background: linear-gradient(189deg, #77466C 0.55%, #6A3E6C 30.38%, #583660 65.19%, #4B2F54 100%),linear-gradient(189deg, #77466c .55%, #6a3e6c 30.38%, #583660 65.19%, #4b2f54 100%);
+
+}
+
+.pricing .card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    border-radius: 5%;
+    color: #fff;
+
+
+}
+
+.card img {
+    border-radius: 5% 5% 0 0;
+}
+
+.mask {
+    padding: 40px;
+    gap: 20px;
+}
+
+.card h1 {
+    font: bold 32px sans-serif;
+
+}
+
+.card h2 {
+    font-size: 14px;
+    color: #ffffffcc;
+}
+
+ul.benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.benefits li:first-child::before,
+.card.ultimate .benefits li::before{
+    position: relative;
+    content: "✓ ";
+}
+
+.card.standard .benefits li:not(:first-child)::before{
+    position: relative;
+    content: "✕ ";
+}
+
+
+/* Responsive */
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .featured .news-container {
+        flex-direction: column;
+    }
+
+    .box h2 {
+        font-size : 20px;
+    }
+    .box p {
+        font-size : 16px;
+    }
+
+     .text {
+        gap: 20px;
+    }
+
+    main.pricing {
+        grid-template-columns: 1fr;
+    }
+
+
+    nav ul.nav{
+        display: none;
+    }
+
+    nav .menu svg{
+        display: block;
+        z-index:2;
+    }
+
+
+
+
+    nav .menu svg:hover {
+        fill: gray;
+    }
+
+}
+
+
+
+/* Mobile*/
+
+@media (max-width: 480px) {
+    .game-title h1 {
+        font-size:  48px ;
+
+    }
+
+    .timer-container p {
+        font-size: 32px;
+    }
+
+      .box h2 {
+        font-size : 16px;
+    }
+    .box p {
+        font-size : 14px;
+    }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .card h2 {
+        font-size: 12px;
+    }
+    .pricing .card {
+        gap: 15px;
+    }
+    .mask {
+        gap: 10px;
+        padding : 10px 20px;
+    }
+
+    nav ul.nav.dropdown {
+        width: 70%;
+    }
+
+
+}
